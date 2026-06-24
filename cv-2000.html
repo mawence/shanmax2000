@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>~*~ Le CV de SUPER CANDIDAT ~*~ Bienvenue sur ma page perso !!! ~*~</title>
+<meta name="generator" content="FrontPage Express 98 / Notepad">
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Oswald:wght@500;600;700&display=swap');
+
+
+  /* ============ RESET DE BASE (mais on garde le mauvais goût) ============ */
+  * { box-sizing: border-box; }
+
+  body {
+    background-color: #000033;
+    
+    background-image: url('assets/background.gif');
+    background-size: cover, 120px 120px;
+    background-repeat: no-repeat, repeat;
+    
+    color: #bb0067;
+    font-family: "Comic Sans MS", "Times New Roman", cursive, fantasy;
+    margin: 0;
+    padding: 0;
+    cursor: url('data:image/png;base64,'), auto;
+    background-attachment: fixed;
+  }
+
+  /* scrollbar moche et fière de l'être (Webkit) */
+  ::-webkit-scrollbar { width: 22px; }
+  ::-webkit-scrollbar-track { background: #ff00ff repeating-linear-gradient(45deg,#ff00ff 0 6px,#00ffff 6px 12px); }
+  ::-webkit-scrollbar-thumb { background: #ffff00; border: 3px ridge #ff0000; }
+
+  marquee.topbar {
+    background: #ff0000;
+    color: #ffff00;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 6px 0;
+    border-bottom: 4px double #ffff00;
+    text-shadow: 2px 2px #000000;
+  }
+
+  /* ============ CONTENEUR PRINCIPAL = TABLE NICHEE COMME EN 1999 ============ */
+
+  table.outer { width: 100%; border-collapse: collapse; }
+  td.bordure {
+    background: repeating-linear-gradient(45deg,#ffff00 0 10px,#000000 10px 20px);
+    padding: 4px;
+  }
+  td.inner-bg {
+    background-color: #d8d8f0;
+  }
+
+  /* ============ HEADER ============ */
+  .header {
+    text-align: center;
+    padding: 18px 10px 6px;
+    background: #000080;
+  }
+
+  .customimage {
+    width: 200px;   /* taille finale affichée */
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .customimage img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  h1.titre {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 46px;
+    margin: 0;
+    background: linear-gradient(to bottom, #ff0000, #ffff00, #00ff00, #00ffff, #ff00ff, #ff0000);
+    background-size: 100% 600%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 4s linear infinite, wiggle 1.6s ease-in-out infinite;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  @keyframes rainbow { 0%{background-position:0 0;} 100%{background-position:0 100%;} }
+  @keyframes wiggle { 0%,100%{transform:rotate(-2deg);} 50%{transform:rotate(2deg);} }
+
+  .soustitre {
+    color: #ffff00;
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive;
+    text-shadow: 1px 1px 0 #ff00ff;
+  }
+
+  .stars { font-size: 22px; letter-spacing: 8px; }
+  .blink { animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  hr.glitter {
+    border: none;
+    height: 6px;
+    background: repeating-linear-gradient(90deg, #ffff00, #ff0000 10px, #00ffff 20px, #ff00ff 30px);
+    margin: 10px 30px;
+  }
+
+  /* ============ COMPTEUR DE VISITEURS ============ */
+  .compteur-zone {
+    text-align: center;
+    margin: 6px 0 10px;
+    font-family: "Times New Roman", serif;
+    color: #ffffff;
+    font-size: 13px;
+  }
+  .compteur {
+    display: inline-flex;
+    background: #000000;
+    border: 2px inset #888;
+    padding: 3px 6px;
+    margin-left: 6px;
+    gap: 2px;
+    vertical-align: middle;
+  }
+  .compteur span {
+    background: #000000;
+    color: #ff0000;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 18px;
+    width: 16px;
+    text-align: center;
+    text-shadow: 0 0 6px #ff0000;
+  }
+
+  /* ============ CONTENU ============ */
+
+  .all {
+    display: flex;
+    gap: 20px; /* espace entre les div */   
+
+  }
+
+  .page-wrap {
+    width: 800px;
+    margin: 20px auto;
+    background: #000080;
+    border: 6px ridge #c0c0c0;
+    flex: 2;
+    padding: auto;
+  }
+  
+  .side {
+    max-width: 400px;
+    flex: 1;
+    padding: 20px;
+  }
+
+  .contenu {
+    background: #d8d8f0;
+    padding: 14px 26px 26px;
+  }
+  
+
+  .bloc {
+    background: #ffffff;
+    border: 4px double #000080;
+    margin-bottom: 22px;
+    padding: 14px 16px;
+    position: relative;
+  }
+
+  .bloc h2 {
+    margin-top: 0;
+    background: #000080;
+    color: #ffff00;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 22px;
+    padding: 6px 10px;
+    margin: -14px -16px 12px -16px;
+    border-bottom: 3px ridge #c0c0c0;
+  }
+
+  .bloc h2 img.deco { vertical-align: middle; height: 20px; margin-right: 6px; }
+
+  p, li { font-family: "Times New Roman", Times, serif; color: #1a0033; font-size: 16px; line-height: 1.5; }
+
+  ul.competences { list-style: none; padding-left: 0; }
+  ul.competences li {
+    background: #ffffcc;
+    border: 2px dashed #ff6600;
+    margin: 4px 0;
+    padding: 4px 10px;
+    font-weight: bold;
+  }
+  ul.competences li::before { content: "☆ "; color: #ff0000; }
+
+  table.exp { width: 100%; border-collapse: collapse; }
+  table.exp td { border: 2px solid #000080; padding: 8px; vertical-align: top; font-family: "Times New Roman", serif; }
+  table.exp td.date { background: #000080; color: #00ffff; font-weight: bold; width: 130px; text-align: center; }
+
+  /* ============ FLAMMES CSS (façon gif "hot page") ============ */
+  .flammes { display:flex; justify-content:center; gap:4px; margin: 4px 0 10px; }
+  .flamme {
+    width: 14px; height: 22px;
+    background: radial-gradient(circle at 50% 80%, #fff700 0%, #ff9900 40%, #ff2200 70%, transparent 100%);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    animation: flicker 0.6s infinite alternate;
+  }
+  .flamme:nth-child(2) { animation-delay: .1s; }
+  .flamme:nth-child(3) { animation-delay: .2s; }
+  .flamme:nth-child(4) { animation-delay: .3s; }
+  .flamme:nth-child(5) { animation-delay: .4s; }
+  @keyframes flicker {
+    from { transform: scaleY(1) scaleX(1) rotate(-2deg); }
+    to   { transform: scaleY(1.25) scaleX(0.85) rotate(2deg); }
+  }
+
+  /* ============ BOUTONS CLIGNOTANTS ============ */
+  .boutons-zone {
+    text-align: center;
+    padding: 16px;
+    background: #000000;
+    border-top: 4px double #ffff00;
+  }
+
+  .btn-2000 {
+    display: inline-block;
+    margin: 6px;
+    padding: 10px 18px;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    border: 3px outset #ffffff;
+    cursor: pointer;
+    animation: clignote 0.9s steps(1) infinite;
+    box-shadow: 0 0 10px currentColor;
+  }
+  .btn-2000:active { border-style: inset; }
+
+  .btn-mail   { background: #00ff00; animation-name: clignoteVert; }
+  .btn-cv     { background: #ffff00; animation-name: clignoteJaune; }
+  .btn-livre  { background: #ff00ff; animation-name: clignoteMagenta; }
+  .btn-home   { background: #00ffff; animation-name: clignoteCyan; }
+
+  @keyframes clignoteVert    { 0%,49%{background:#00ff00;} 50%,100%{background:#ffffff;} }
+  @keyframes clignoteJaune   { 0%,49%{background:#ffff00;} 50%,100%{background:#ff8800;} }
+  @keyframes clignoteMagenta { 0%,49%{background:#ff00ff;} 50%,100%{background:#ffffff;} }
+  @keyframes clignoteCyan    { 0%,49%{background:#00ffff;} 50%,100%{background:#0000ff;} }
+
+  .badge88x31 {
+    display: inline-block;
+    width: 150px; height: 31px;
+    background: #c0c0c0;
+    border: 2px outset #fff;
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+    line-height: 31px;
+    margin: 4px;
+    font-family: "Arial", sans-serif;
+    vertical-align: middle;
+  }
+
+  /* ============ FOOTER ============ */
+  .footer {
+    text-align: center;
+    color: #ffff00;
+    background: #000080;
+    padding: 14px;
+    font-size: 12px;
+    font-family: "Times New Roman", serif;
+    border-top: 4px double #c0c0c0;
+  }
+
+  .webring { margin-top: 8px; }
+
+  /* sparkle trail (paillettes au mouvement de souris) */
+  .sparkle {
+    position: fixed;
+    pointer-events: none;
+    font-size: 35px;
+    z-index: 9999;
+    animation: sparkleFade 0.7s forwards;
+  }
+  @keyframes sparkleFade {
+    from { opacity: 1; transform: translateY(-20px) scale(1); }
+    to   { opacity: 0; transform: translateY(-100px) scale(0.3); }
+  }
+
+  @media (max-width: 850px) {
+    .page-wrap { width: 96%; }
+  }
+</style>
+</head>
+<body>
+
+<marquee class="topbar" behavior="alternate" scrollamount="6">
+  ★彡 BIENVENUE SUR LE CV EN LIGNE DE VOTRE FUTUR(E) EMPLOYÉ(E) MODÈLE 彡★ — N'OUBLIEZ PAS DE SIGNER LE LIVRE D'OR —
+</marquee>
+<div class="customimage">
+  <img src="assets/2009.gif" alt="★彡">
+</div>
+
+<div class="all">
+  <div class="side">
+    <iframe 
+      src="player.html" 
+      width="380" 
+      height="500" 
+      style="border:none; overflow:hidden;"
+      title="Lecteur de musique">
+    </iframe>
+  </div>
+
+  <div class="page-wrap">
+  <table class="outer">
+    <tr><td class="bordure">
+      <table class="outer"><tr><td class="inner-bg">
+
+        <div class="header">
+          <div class="stars"><img src="assets/windows.gif" alt="★彡"> <img src="assets/amiga.gif" alt="★彡"> <img src="assets/freestuff.gif" alt="★彡"></div>
+          <h1 class="titre"><img src="assets/flower.gif" alt="⚡">MAXENCE SHAN<img src="assets/flower.gif" alt="⚡"></h1>
+          <div class="soustitre">
+            <span class="blink">▓▓</span> WEB DEVELOPER, GLOBAL DESIGNER, MARKETING GENIUS <span class="blink">▓▓</span>
+          </div>
+          <div class="flammes">
+            <div class="flamme"></div><div class="flamme"></div><div class="flamme"></div>
+            <div class="flamme"></div><div class="flamme"></div>
+          </div>
+          <hr class="glitter">
+          <div class="compteur-zone">
+            Vous êtes le visiteur n°
+            <span class="compteur" id="compteur"></span>
+            depuis le 10/06/2006 — <span class="blink">INCREDIBELY UNIQUE</span>
+          </div>
+        </div>
+
+        <div class="contenu">
+
+          <div class="bloc">
+            <h2><img class="deco" src="assets/paper.gif" alt="✉"> QUI SUIS-JE ?</h2>
+            <p>
+              Salut internaute ! Bienvenue sur ma page CV personnelle. Je suis développeur passionné,
+              motivé, et toujours <em>online</em> à toute heure. Je suis aussi et surtout <b>DESIGNER GLOBAL</b>,
+              un atout dont vous n'imaginez pas encore l'ampleur. <u>Ma capacité à apprendre plus vite que
+              la lumière</u> et mon sens de l'humour décalé font de moi le candidat idéal pour rajeunir votre
+              équipe. Mon amplitude sur les métiers créatifs et ma capacité à me mettre à la place des gens
+              me permettent de concevoir des solutions innovantes. <br><br> Vous voulez un nouveau site web ? vous
+              optimiser vos workflows ? digitaliser votre entreprise ? trouver
+              l'idée qui tuera vos concurrents ? Je suis votre homme !
+            </p>
+          </div>
+
+          <p1>  <img src="assets/saylor.gif" alt="★彡">  <img src="assets/saylor2.gif" alt="★彡"></p1>
+
+          <div class="bloc">
+            <h2><img class="deco" src="assets/pen.gif" alt="💼"> EXPÉRIENCE PROFESSIONNELLE</h2>
+            <table class="exp">
+              <tr>
+                <td class="date">2026 — auj.</td>
+                <td><strong>Alternance : Développeur Web, Designer, Graphiste & responsable Marketing et communication</strong> — New Born Crèches.<br>
+                    Développement du site web & création d'outils pour les commerciaux, équipes de crèche et parents.
+                    Marketing & Communication et conception graphique (logo, da) & stratégie digitale</td>
+              </tr>
+              <tr>
+                <td class="date">2025 (4 mois)</td>
+                <td><strong>Freelance : Développeur Web & Web Designer</strong> — New Born Crèches<br>
+                    Développement du site web en Freelance : WordPress/Prestashop, support, Web Design UX/UI</td>
+              </tr>
+              <tr>
+                <td class="date">2024 (1 mois)</td>
+                <td><strong>Stage Design & Marketing</strong> — Festival Science Infuze.<br>
+                    Marketing, définition des personas, Analyse de terrain, travail sur
+                    l’aménagement et l’identité visuelle de l’évènement</td>
+              </tr>
+              <tr>
+                <td class="date">2024 (1 mois)</td>
+                <td><strong>Stage assistant R&D Pacemakers</strong> — Microport (implants médicaux)<br>
+                    Optimisation de la méthode d'assemblage des sondes, UX Design et Vulgarisation :
+                    compréhension et conception des guides de montages à destination du personnel
+                    médical.</td>
+              </tr>
+              <tr>
+                <td class="date">2022 (2 mois)</td>
+                <td><strong>Freelance : Design et développement web</strong> — Sophie Luxemberg
+                    (Coach en orientation)<br>
+                    Conception d'une maquette d'un jeu de société d'orientation pour collégiens et
+                    lycéens en ligne sur Figma Développement du projet en HTML CSS JavaScript</td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="bloc">
+            <h2><img class="deco" src="assets/disc.gif" alt="🎓"> FORMATION</h2>
+            <table class="exp">
+              <tr>
+                <td class="date">2022 - 2027 </td>
+                <td><strong>CY Ecole de design - Saint-germain-En-Laye</strong> — Cursus Master Design Global<br>
+                    Méthodologie projet et design, sciences sociales, pratique du dessin, appentissage
+                    d'outils créatifs : Photoshop, Illustrator, AfterEffect, Rhino 3D</td>
+              </tr>
+              <tr>
+                <td class="date">2024 (6 mois)</td>
+                <td><strong>RMIT Australie</strong> — Echange universitaire<br>
+                    Futur Urban Mobilities, Advanced CAD (Autodesk Alias), Furniture Design,
+                    pratique de l'anglais</td>
+              </tr>
+              <tr>
+                <td class="date">2022</td>
+                <td><strong>Lycée La Source - Meudon</strong><br>
+                    Baccalauréa Général : Spécialités Numérique Sciences Informatiques & Cinéma Audiovisuel</td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="bloc">
+            <h2><img class="deco" src="assets/star.gif" alt="⚡">COMPÉTENCES</h2>
+            <ul class="competences">
+              <li>Dessin</li>
+              <li>Design UI / UX</li>
+              <li>Design Thinking</li>
+              <li>Sciences sociales</li>
+              <li>identité graphique</li>
+              <li>Web Design / Développement</li>
+              <li>Image : Photographie / Montage vidéo</li>
+            </ul>
+            <br>
+            <h2><img class="deco" src="assets/computer.gif" alt="C"> LOGICIELS</h2>
+            <ul class="competences">
+              <li>Figma, Photoshop, Illustrator</li>
+              <li>Première Pro, After Effect, DaVinci</li>
+              <li>Rhino 3D, Alias</li>
+            </ul>
+            <br>
+            <h2>⌨️ LANGUAGES</h2>
+            <ul class="competences">
+              <li>HTML, CSS, Javascript & Python</li>
+              <li>React, JSX en cours...</li>
+            </ul>
+          </div>
+
+          <div class="bloc">
+            <h2>📨 ME CONTACTER</h2>
+            <p>
+              ✉ email : maxence.shan@gmail.com<br>
+              💬 ICQ : 07 60 01 33 05<br>
+              📟 Véritable portfolio => <a href="https://shanmax.com" target="_blank">shanmax.com</a>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="boutons-zone">
+          <a class="btn-2000 btn-mail" href="mailto:super.candidat@hotmail.com">✉ M'ENVOYER UN MAIL</a>
+          <a class="btn-2000 btn-cv" href="#" onclick="alert('Téléchargement du CV en cours... (mais en fait non, c\'est une démo !)'); return false;">⬇ TÉLÉCHARGER MON CV</a>
+          <a class="btn-2000 btn-livre" href="#" onclick="document.getElementById('livreOr').scrollIntoView({behavior:'smooth'}); return false;">📖 LIVRE D'OR</a>
+          <a class="btn-2000 btn-home" href="#top">🏠 RETOUR EN HAUT</a>
+          <br><br>
+          <span class="badge88x31">Optimisé pour 800×600</span>
+          <span class="badge88x31">100% FAIT À LA MAIN</span>
+          <span class="badge88x31">Powered by ☕</span>
+        </div>
+
+        <div class="contenu" id="livreOr">
+          <div class="bloc">
+            <h2>📖 LIVRE D'OR</h2>
+            <p id="messageLivreOr" style="font-style:italic;">Aucun message pour le moment... soyez le premier à signer !</p>
+            <input type="text" id="inputLivreOr" placeholder="Laissez un petit mot sympa..." style="font-family:'Comic Sans MS',cursive; padding:4px; width:70%;">
+            <button class="btn-2000 btn-mail" style="animation:none; background:#00ff00;" onclick="signerLivreOr()">SIGNER !</button>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="webring">
+            ⛓ Membre du <strong>Webring des CV Rétro</strong> ⛓<br>
+            ← Précédent | <a href="#" style="color:#00ffff;">Suivant</a> →
+          </div>
+          <p>© 2000-2026 John Doe — Tous droits réservés (ou pas, internet c'est le far west).</p>
+          <p>Meilleur visionné avec Internet Explorer 5.5, résolution 800x600, modem 56k recommandé.</p>
+          <div class="stars">✦ ☆ ✧ ★ ✧ ☆ ✦</div>
+        </div>
+
+      </td></tr></table>
+    </td></tr>
+  </table>
+  </div>
+</div>
+
+<script>
+  // ===== Compteur de visiteurs façon site perso (chiffre random qui "s'incrémente") =====
+  function genererCompteur() {
+    const zone = document.getElementById('compteur');
+    let valeur = Math.floor(Math.random() * 80000) + 10000;
+    const chiffres = String(valeur).padStart(6, '0').split('');
+    zone.innerHTML = chiffres.map(c => `<span>${c}</span>`).join('');
+  }
+  genererCompteur();
+
+  // ===== Livre d'or minimaliste (en mémoire, pas de stockage navigateur) =====
+  const messages = [];
+  function signerLivreOr() {
+    const input = document.getElementById('inputLivreOr');
+    const texte = input.value.trim();
+    if (!texte) {
+      alert("Écris quelque chose avant de signer, voyons !");
+      return;
+    }
+    messages.unshift(texte);
+    const zone = document.getElementById('messageLivreOr');
+    zone.innerHTML = messages.map(m => `★ ${m}`).join('<br>');
+    input.value = '';
+  }
+
+  // ===== Paillettes qui suivent la souris (avec parcimonie pour rester utilisable) =====
+  let dernierSparkle = 0;
+  document.addEventListener('mousemove', function(e) {
+    const maintenant = Date.now();
+    if (maintenant - dernierSparkle < 60) return; // limite la fréquence
+    dernierSparkle = maintenant;
+    const symboles = ['✦','★','☆','✧','✨'];
+    const s = document.createElement('span');
+    s.className = 'sparkle';
+    s.textContent = symboles[Math.floor(Math.random() * symboles.length)];
+    s.style.left = e.clientX + 'px';
+    s.style.top = e.clientY + 'px';
+    s.style.color = ['#ffff00','#00ffff','#ff00ff','#ffffff'][Math.floor(Math.random()*4)];
+    document.body.appendChild(s);
+    setTimeout(() => s.remove(), 700);
+  });
+
+  // ===== Petit message console pour les curieux qui ouvrent les devtools =====
+  console.log("%c⚠ ATTENTION ⚠ Vous êtes entré dans une zone de nostalgie extrême.", "color: lime; background: black; font-size:16px;");
+</script>
+
+</body>
+</html>
