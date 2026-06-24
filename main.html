@@ -43,6 +43,14 @@
     text-shadow: 2px 2px #000000;
   }
 
+  .title {
+    display: block;
+    margin: -170px auto;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+  }
+
   /* ============ CONTENEUR PRINCIPAL = TABLE NICHEE COMME EN 1999 ============ */
 
   table.outer { width: 100%; border-collapse: collapse; }
@@ -151,6 +159,7 @@
 
   .page-wrap {
     width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
     background: #000080;
     border: 6px ridge #c0c0c0;
@@ -162,6 +171,12 @@
     max-width: 400px;
     flex: 1;
     padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .side {
+      max-width: 1200px;
+    }
   }
 
   .contenu {
@@ -311,12 +326,15 @@
 <div class="customimage">
   <img src="assets/2009.gif" alt="★彡">
 </div>
+<div>
+  <img class="title" src="assets/title.gif" alt="★彡">
+</div>
 
 <div class="all">
   <div class="side">
     <iframe 
       src="player.html" 
-      width="380" 
+      width="100%"
       height="500" 
       style="border:none; overflow:hidden;"
       title="Lecteur de musique">
